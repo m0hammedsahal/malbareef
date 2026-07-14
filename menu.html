@@ -1,0 +1,52 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8"/>
+<meta name="viewport" content="width=device-width,initial-scale=1"/>
+<title>Menu — MALBA_REE | Kerala Malba & Thick Milkshakes</title>
+<meta name="description" content="Explore signature Kerala-style malbas: Tender Coconut, Mango, Dates, Chikku, Avocado and our Special Dryfruit Malba."/>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bagel+Fat+One&family=Caveat+Brush&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="siteHeader"></div>
+
+<section class="hero-sub">
+  <div class="hero-bg"></div>
+  <div class="sunburst"></div>
+  <div class="container-sm" style="position:relative">
+    <p class="eyebrow">Our Menu</p>
+    <h1>Sip the Taste of Kerala</h1>
+    <p>Slow-blended, layered & topped with cream — every glass is built with Kerala love.</p>
+  </div>
+</section>
+
+<section class="section" style="padding-top:40px">
+  <div class="container">
+    <div class="tools">
+      <div class="search"><input type="text" id="menuSearch" placeholder="Search malbas…"></div>
+      <div class="filters">
+        <button class="filter-btn active" data-filter="all">all</button>
+        <button class="filter-btn" data-filter="signature">signature</button>
+        <button class="filter-btn" data-filter="premium">premium</button>
+      </div>
+    </div>
+
+    <div class="grid grid-3" style="margin-top:40px">
+      <div class="malba-card reveal" data-malba data-tag="signature" data-name="Tender Coconut Malba"><div class="malba-img"><div class="sunburst"></div><div class="malba-emoji">🥥</div></div><div class="malba-body"><h3 class="green">Tender Coconut Malba</h3><p>Silky tender coconut blended with creamy malba — a true Kerala classic.</p><div class="malba-foot"><span class="price">Rs 99</span><button class="add-btn" data-add="Tender Coconut Malba">+</button></div></div></div>
+      <div class="malba-card reveal" data-malba data-tag="signature" data-name="Mango Malba"><div class="malba-img"><div class="sunburst"></div><div class="malba-emoji">🥭</div></div><div class="malba-body"><h3 class="red">Mango Malba</h3><p>Alphonso pulp layered with thick malba and whipped cream.</p><div class="malba-foot"><span class="price red">Rs 99</span><button class="add-btn" data-add="Mango Malba">+</button></div></div></div>
+      <div class="malba-card reveal" data-malba data-tag="signature" data-name="Dates Malba"><div class="malba-img"><div class="sunburst"></div><div class="malba-emoji">🌰</div></div><div class="malba-body"><h3 class="red">Dates Malba</h3><p>Slow-blended Medjool dates with caramel notes and rich cream.</p><div class="malba-foot"><span class="price red">Rs 99</span><button class="add-btn" data-add="Dates Malba">+</button></div></div></div>
+      <div class="malba-card reveal" data-malba data-tag="signature" data-name="Chikku Malba"><div class="malba-img"><div class="sunburst"></div><div class="malba-emoji">🍈</div></div><div class="malba-body"><h3 class="green">Chikku Malba</h3><p>Honey-sweet sapodilla whipped into a velvety Kerala-style malba.</p><div class="malba-foot"><span class="price">Rs 99</span><button class="add-btn" data-add="Chikku Malba">+</button></div></div></div>
+      <div class="malba-card reveal" data-malba data-tag="signature" data-name="Avocado Malba"><div class="malba-img"><div class="sunburst"></div><div class="malba-emoji">🥑</div></div><div class="malba-body"><h3 class="green">Avocado Malba</h3><p>Buttery avocado, fresh cream and a hint of cardamom.</p><div class="malba-foot"><span class="price">Rs 99</span><button class="add-btn" data-add="Avocado Malba">+</button></div></div></div>
+      <div class="malba-card reveal" data-malba data-tag="premium" data-name="Special Dryfruit Malba"><div class="malba-img"><span class="badge">Signature</span><div class="sunburst"></div><div class="malba-emoji">🍯</div></div><div class="malba-body"><h3 class="red">Special Dryfruit Malba</h3><p>Our signature — almonds, cashews, dates & saffron in every layer.</p><div class="malba-foot"><span class="price red">Rs 149</span><button class="add-btn" data-add="Special Dryfruit Malba">+</button></div></div></div>
+    </div>
+    <p id="menuEmpty" class="text-center text-muted" style="display:none;padding:40px 0">No malbas match that search.</p>
+  </div>
+</section>
+
+<div id="siteFooter"></div>
+<script src="script.js"></script>
+</body>
+</html>
