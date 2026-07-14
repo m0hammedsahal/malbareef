@@ -57,9 +57,13 @@ function buildFooter() {
   <footer class="site-footer">
     <div class="footer-grid footer">
       <div>
-        <div class="footer-logo-wrap">
-          <div class="logo"><span class="logo-mark">M</span><span>MALBA_REE</span></div>
-        </div>
+          <a href="index.html" class="logo">
+          <img
+            src="./images/logo2.png"
+            alt="MALBA_REE Logo"
+            class="logo-img">
+        </a>
+        
         <p class="font-script" style="margin-top:16px;font-size:24px;line-height:1.2;opacity:.9">Sip the taste of Kerala in every glass.</p>
       </div>
       <div>
@@ -75,7 +79,7 @@ function buildFooter() {
         <h4>Visit Us</h4>
         <ul>
           <li>📍 Hyderabad, Telangana</li>
-          <li>📞 +91 90000 00000</li>
+          <li>📞 +91 85938 21281</li>
           <li>✉️ hello@malbaree.in</li>
         </ul>
       </div>
