@@ -10,7 +10,7 @@
   --card:#ffffff;
   --shadow-soft:0 10px 30px -10px rgba(0,0,0,.15);
   --shadow-glow:0 20px 60px -20px rgba(14,107,63,.45);
-  --grad-brand:linear-gradient(135deg,#FFD600 0%,#FFB300 100%);
+  --grad-brand:linear-gradient(135deg,#FFD600 0%,#FFD600 100%);
   /* --grad-brand:linear-gradient(135deg,#FFD600 0%,#FFD600 100%); */
 
   --grad-leaf:linear-gradient(135deg,#0E6B3F 0%,#3fa066 100%);
@@ -145,18 +145,50 @@ body{
 }
 
 .hero-visual{
-    display:flex;
-    justify-content:center;
-    align-items:center;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.video-wrapper{
+    position: relative;
+    width: 100%;
+    height: 370px;
+    border-radius: 30px;
+    overflow: hidden;
 }
 
 .hero-video{
-    width:100%;
-    max-width:550px;
-    height:auto;
-    border-radius:20px;
-    object-fit:cover;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display: block;
 }
+
+
+
+.video-wrapper::before{
+    content: "";
+    position: absolute;
+    inset: 0;
+    z-index: 2;
+    pointer-events: none;
+
+    background:
+        linear-gradient(to bottom,
+            #FFD600 0%,
+            rgba(255,214,0,0) 15%,
+            rgba(255,214,0,0) 89%,
+            #FFD600 100%),
+
+        linear-gradient(to right,
+            #FFD600 0%,
+            rgba(255,214,0,0) 10%,
+            rgba(255,214,0,0) 88%,
+            #FFD600 100%);
+}
+
 
 
 *{box-sizing:border-box;margin:0;padding:0}
@@ -206,7 +238,7 @@ h1,h2,h3,h4,.font-display{font-family:var(--font-display);letter-spacing:.01em;f
 section{position:relative}
 .hero{position:relative;overflow:hidden}
 .hero-bg{position:absolute;inset:0;background:var(--grad-brand)}
-.sunburst{position:absolute;inset:0;background-image:repeating-conic-gradient(from 0deg at 50% 50%,#f5c93a 0deg 6deg,#FFD600 6deg 12deg);opacity:.25;animation:spin 40s linear infinite}
+.sunburst{z-index:1;position:absolute;inset:0;background-image:repeating-conic-gradient(from 0deg at 50% 50%,#f5c93a 0deg 6deg,#FFD600 6deg 12deg);opacity:.25;animation:spin 40s linear infinite}
 @keyframes spin{to{transform:rotate(360deg)}}
 .blob{position:absolute;border-radius:50%;filter:blur(60px);pointer-events:none}
 .hero-grid{position:relative;display:grid;grid-template-columns:1fr;gap:40px;align-items:center;padding:40px 0 80px}
